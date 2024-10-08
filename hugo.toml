@@ -1,4 +1,0 @@
-baseURL = 'https://shotsbyjesus.com/'
-languageCode = 'en-us'
-title = 'Shots by Jesus'
-disableKinds = ['taxonomy', 'term']
