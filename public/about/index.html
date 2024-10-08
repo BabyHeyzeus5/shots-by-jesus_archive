@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shots By Jesus</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <style>
+        * {
+            --primary-color: #ffffff;
+            --secondary-color: #000000;
+            --text-color: #333333;
+        }
+    </style>
+</head>
+<body>
+    <a href="javascript:void(0);" class="hamburger" id="hamburger" onclick="navFunction()">
+        &#9776; 
+    </a>
+    <nav id="nav-list">
+        <img class="nav-logo" src="/camera icon.png" alt="camera icon">
+        <ul id="navlinks">
+            <li><a class="navlink" href="/">Home</a></li>
+            <li><a class="navlink" href="/#gala">Galleries</a></li>
+            
+            
+        </ul>
+    </nav>
+    <script>
+    function navFunction() {
+        var screenWidth = window.innerWidth || document.documentElement.clientWidth;
+
+        if (screenWidth < 768) {
+            
+            var x = document.getElementById("navlinks")
+            if (x.style.display === "block") {
+                x.style.display = "none"
+            } else {
+                x.style.display = "block"
+            }
+        }
+    }
+    </script>
+    
+    <head>
+        <link rel="stylesheet" href="/css/about.css">
+    </head>
+    <section class="hero">
+        <div class="hero-img"><img src="/images/Hero.jpg" alt="About"></div>
+        <div class="hero-intro">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Discover my journey in photography and programming.</p>
+        </div>
+    </section>
+    <h2 id="about-me">About Me</h2>
+<p>I am Andrew Jesus, a passionate photographer and aspiring programmer. This website showcases my work and the journey I am on in both photography and technology.</p>
+<h3 id="my-journey">My Journey</h3>
+<p>Photography has always been a part of my life. I picked up my first camera during my early teens, and ever since, I have been captivated by the art of capturing moments.</p>
+<p>Programming has allowed me to bring my creative ideas to life through technology. I enjoy building applications that can enhance the user experience and share my passion for photography.</p>
+<hr>
+<p>Feel free to explore my galleries and other content on this site!</p>
+
+
+    <footer>
+        <p>&copy; 2024 Andrew Jesus.  All rights reserved.</p>
+    </footer>
+    <script>
+    
+        window.addEventListener('scroll', function() {
+            var navbar = document.getElementById('nav-list');
+            
+            
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        
+        window.addEventListener('resize', function() {
+            var x = document.getElementById("navlinks");
+            var screenWidth = window.innerWidth || document.documentElement.clientWidth;
+
+            
+            if (screenWidth >= 768) {
+                x.style.display = "flex";
+            } else {
+                
+                x.style.display = "none";
+            }
+        });
+        </script>
+</body>
+</html>
