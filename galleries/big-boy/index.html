@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shots By Jesus</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <style>
+        * {
+            --primary-color: #FFCC00;
+            --secondary-color: #D10000;
+            --text-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <a href="javascript:void(0);" class="hamburger" id="hamburger" onclick="navFunction()">
+        &#9776; 
+    </a>
+    <nav id="nav-list">
+        <img class="nav-logo" src="/camera icon.png" alt="camera icon">
+        <ul id="navlinks">
+            <li><a class="navlink" href="/">Home</a></li>
+            <li><a class="navlink" href="/#gala">Galleries</a></li>
+            
+            
+        </ul>
+    </nav>
+    <script>
+    function navFunction() {
+        var screenWidth = window.innerWidth || document.documentElement.clientWidth;
+
+        if (screenWidth < 768) {
+            
+            var x = document.getElementById("navlinks")
+            if (x.style.display === "block") {
+                x.style.display = "none"
+            } else {
+                x.style.display = "block"
+            }
+        }
+    }
+    </script>
+    
+<style>
+    * {
+        --primary-color: #FFCC00;
+        --secondary-color: #D10000;
+        --text-color: #fff;
+    }
+</style>
+<head>
+    <link rel="stylesheet" href="/css/gallery.css">
+</head>
+<script>
+    
+    window.addEventListener('scroll', function() {
+        var navbar = document.getElementById('nav-list');
+        
+        
+        if (window.scrollY > 50 && window.scrollY < 200) {
+            navbar.classList.add('scrolled')
+        }
+        else if (window.scrollY > 200) {
+            navbar.classList.remove('scrolled')
+        }
+    });
+</script>
+
+<section class="gallery-header">
+    <div class="container">
+        <h1>Big Boy #4014</h1>
+        <p>Shot on September 4 &amp; 5, 2024 in Boone and Ames, Iowa.</p>
+    </div>
+</section>
+
+
+<section class="gallery-images">
+    <div class="container">
+        <div class="gallery-grid">
+            
+                <div class="gallery-item">
+                    <img src="/albums/big-boy/IMG_1284.jpg" alt="Big Boy #4014" class="preview-size">
+                </div>
+            
+                <div class="gallery-item">
+                    <img src="/albums/big-boy/IMG_1318.jpg" alt="Big Boy #4014" class="preview-size">
+                </div>
+            
+                <div class="gallery-item">
+                    <img src="/albums/big-boy/IMG_1320.jpg" alt="Big Boy #4014" class="preview-size">
+                </div>
+            
+                <div class="gallery-item">
+                    <img src="/albums/big-boy/IMG_1322.jpg" alt="Big Boy #4014" class="preview-size">
+                </div>
+            
+                <div class="gallery-item">
+                    <img src="/albums/big-boy/IMG_1343.jpg" alt="Big Boy #4014" class="preview-size">
+                </div>
+            
+                <div class="gallery-item">
+                    <img src="/albums/big-boy/IMG_1386.jpg" alt="Big Boy #4014" class="preview-size">
+                </div>
+            
+                <div class="gallery-item">
+                    <img src="/albums/big-boy/IMG_1391.jpg" alt="Big Boy #4014" class="preview-size">
+                </div>
+            
+                <div class="gallery-item">
+                    <img src="/albums/big-boy/IMG_1392.jpg" alt="Big Boy #4014" class="preview-size">
+                </div>
+            
+                <div class="gallery-item">
+                    <img src="/albums/big-boy/IMG_1407.jpg" alt="Big Boy #4014" class="preview-size">
+                </div>
+            
+                <div class="gallery-item">
+                    <img src="/albums/big-boy/IMG_1425-Enhanced-NR.jpg" alt="Big Boy #4014" class="preview-size">
+                </div>
+            
+                <div class="gallery-item">
+                    <img src="/albums/big-boy/IMG_1426.jpg" alt="Big Boy #4014" class="preview-size">
+                </div>
+            
+        </div>
+    </div>
+</section>
+
+<div id="overlay" class="overlay">
+    <img id="enlargedImage" class="enlargedImage" src="" alt="Image Enlarged">
+</div>
+
+<script src="/js/gallery.js"></script>
+
+    <footer>
+        <p>&copy; 2024 Andrew Jesus.  All rights reserved.</p>
+    </footer>
+    <script>
+    
+        window.addEventListener('scroll', function() {
+            var navbar = document.getElementById('nav-list');
+            
+            
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        
+        window.addEventListener('resize', function() {
+            var x = document.getElementById("navlinks");
+            var screenWidth = window.innerWidth || document.documentElement.clientWidth;
+
+            
+            if (screenWidth >= 768) {
+                x.style.display = "flex";
+            } else {
+                
+                x.style.display = "none";
+            }
+        });
+        </script>
+</body>
+</html>

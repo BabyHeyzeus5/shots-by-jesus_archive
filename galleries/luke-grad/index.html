@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shots By Jesus</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <style>
+        * {
+            --primary-color: #C8102e;
+            --secondary-color: #f1be48;
+            --text-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <a href="javascript:void(0);" class="hamburger" id="hamburger" onclick="navFunction()">
+        &#9776; 
+    </a>
+    <nav id="nav-list">
+        <img class="nav-logo" src="/camera icon.png" alt="camera icon">
+        <ul id="navlinks">
+            <li><a class="navlink" href="/">Home</a></li>
+            <li><a class="navlink" href="/#gala">Galleries</a></li>
+            
+            
+        </ul>
+    </nav>
+    <script>
+    function navFunction() {
+        var screenWidth = window.innerWidth || document.documentElement.clientWidth;
+
+        if (screenWidth < 768) {
+            
+            var x = document.getElementById("navlinks")
+            if (x.style.display === "block") {
+                x.style.display = "none"
+            } else {
+                x.style.display = "block"
+            }
+        }
+    }
+    </script>
+    
+<style>
+    * {
+        --primary-color: #C8102e;
+        --secondary-color: #f1be48;
+        --text-color: #fff;
+    }
+</style>
+<head>
+    <link rel="stylesheet" href="/css/gallery.css">
+</head>
+<script>
+    
+    window.addEventListener('scroll', function() {
+        var navbar = document.getElementById('nav-list');
+        
+        
+        if (window.scrollY > 50 && window.scrollY < 200) {
+            navbar.classList.add('scrolled')
+        }
+        else if (window.scrollY > 200) {
+            navbar.classList.remove('scrolled')
+        }
+    });
+</script>
+
+<section class="gallery-header">
+    <div class="container">
+        <h1>Graduation</h1>
+        <p></p>
+    </div>
+</section>
+
+
+<section class="gallery-images">
+    <div class="container">
+        <div class="gallery-grid">
+            
+                <div class="gallery-item">
+                    <img src="/albums/luke-grad/IMG_6709.JPG" alt="Graduation" class="preview-size">
+                </div>
+            
+                <div class="gallery-item">
+                    <img src="/albums/luke-grad/IMG_6710.JPG" alt="Graduation" class="preview-size">
+                </div>
+            
+                <div class="gallery-item">
+                    <img src="/albums/luke-grad/IMG_6716.JPG" alt="Graduation" class="preview-size">
+                </div>
+            
+                <div class="gallery-item">
+                    <img src="/albums/luke-grad/IMG_6722.JPG" alt="Graduation" class="preview-size">
+                </div>
+            
+                <div class="gallery-item">
+                    <img src="/albums/luke-grad/IMG_6723.JPG" alt="Graduation" class="preview-size">
+                </div>
+            
+                <div class="gallery-item">
+                    <img src="/albums/luke-grad/IMG_6726.JPG" alt="Graduation" class="preview-size">
+                </div>
+            
+                <div class="gallery-item">
+                    <img src="/albums/luke-grad/IMG_6744.JPG" alt="Graduation" class="preview-size">
+                </div>
+            
+                <div class="gallery-item">
+                    <img src="/albums/luke-grad/IMG_6755.JPG" alt="Graduation" class="preview-size">
+                </div>
+            
+                <div class="gallery-item">
+                    <img src="/albums/luke-grad/IMG_6759.JPG" alt="Graduation" class="preview-size">
+                </div>
+            
+                <div class="gallery-item">
+                    <img src="/albums/luke-grad/IMG_6796.JPG" alt="Graduation" class="preview-size">
+                </div>
+            
+                <div class="gallery-item">
+                    <img src="/albums/luke-grad/IMG_6804%20%281%29.JPG" alt="Graduation" class="preview-size">
+                </div>
+            
+                <div class="gallery-item">
+                    <img src="/albums/luke-grad/IMG_6804.JPG" alt="Graduation" class="preview-size">
+                </div>
+            
+                <div class="gallery-item">
+                    <img src="/albums/luke-grad/IMG_6810.JPG" alt="Graduation" class="preview-size">
+                </div>
+            
+                <div class="gallery-item">
+                    <img src="/albums/luke-grad/IMG_6822.JPG" alt="Graduation" class="preview-size">
+                </div>
+            
+                <div class="gallery-item">
+                    <img src="/albums/luke-grad/IMG_6827.JPG" alt="Graduation" class="preview-size">
+                </div>
+            
+        </div>
+    </div>
+</section>
+
+<div id="overlay" class="overlay">
+    <img id="enlargedImage" class="enlargedImage" src="" alt="Image Enlarged">
+</div>
+
+<script src="/js/gallery.js"></script>
+
+    <footer>
+        <p>&copy; 2024 Andrew Jesus.  All rights reserved.</p>
+    </footer>
+    <script>
+    
+        window.addEventListener('scroll', function() {
+            var navbar = document.getElementById('nav-list');
+            
+            
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        
+        window.addEventListener('resize', function() {
+            var x = document.getElementById("navlinks");
+            var screenWidth = window.innerWidth || document.documentElement.clientWidth;
+
+            
+            if (screenWidth >= 768) {
+                x.style.display = "flex";
+            } else {
+                
+                x.style.display = "none";
+            }
+        });
+        </script>
+</body>
+</html>
