@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://shotsbyjesus.com/'
 languageCode = 'en-us'
 title = 'Shots by Jesus'
-disableKidns = ['taxonomy', 'term']
+disableKinds = ['taxonomy', 'term']
